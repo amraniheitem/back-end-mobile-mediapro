@@ -45,7 +45,7 @@ app.use('/cateproduct', cateProductRoutes);
 app.use('/order', commandeRoutes);
 app.use('/voix', voixRoutes);
 app.use('/boutique', boutiqueRoutes);
-app.use('/user', userROutes);
+app.use('/auth', userROutes);
 
 mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('✅ Connected to MongoDB'))
